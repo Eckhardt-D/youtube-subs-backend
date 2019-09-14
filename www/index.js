@@ -21,5 +21,5 @@ setInterval(() => {
 }, 30 * 60 * 1000);
 
 header.addEventListener("click", () => {
-  window.open("https://youtube.com");
+  window.open("https://www.youtube.com/channel/UCd4UmlBFIhj-yJrzn6foxgw");
 });

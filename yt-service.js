@@ -13,7 +13,7 @@ setTimeout(() => {
     .catch(e => {
       console.log(e);
     });
-}, 30000);
+}, 60 * 60 * 1000);
 
 async function fetchData() {
   const response = await fetch(URL, {

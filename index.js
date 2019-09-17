@@ -18,7 +18,7 @@ app.get("/api/v1", (req, res) => {
         res.json({ data: {} });
       });
   } else {
-    res.json({ subscribers: "1000", views: "12000" });
+    res.json(currentData);
   }
 });
 

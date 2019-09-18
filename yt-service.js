@@ -22,15 +22,16 @@ async function fetchData() {
     console.log(e)
   })
 
-  const data = await response.json().catch(e => console.log(e))
+  const data = await response.json()
 
   if (data) {
     let subscribers = data.items[0].statistics.subscriberCount
     let views = data.items[0].statistics.viewCount
+    currentData.data = { subscribers, views }
     return { subscribers, views }
   }
 
-  return null
+  return { subscribers: 0, views: 0 }
 }
 
 module.exports = { currentData, fetchData }
